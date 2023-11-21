@@ -62,3 +62,15 @@
 2. 抓包的时候不进行去重，全部抓下来，落盘到Node的某个位置（关键词：gopacket）
 3. 在Node上起一个进程，针对所有pod抓下来的包进行合并，去重（关键词：joincap，布隆过滤器）
 4. 完成后，推送到某个分析中心
+
+## 3.实践
+
+### 3.1 模拟一个生产环境
+
+![image](https://github.com/yanqiaoyu/k8s-pod-traffic-deduplication/assets/19269618/35a6f263-d345-4fec-85b9-ff40eec5f13e)
+
+我搭建了一个模拟某个客户场景的测试环境，具体拓扑如上图
+
+
+
+
